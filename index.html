@@ -1,131 +1,103 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Portfolio</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="background-effects">
-        <div class="glow-orb orb-1"></div>
-        <div class="glow-orb orb-2"></div>
-    </div>
+    <div class="bg-image"></div>
+    <div class="overlay"></div>
 
-    <div class="container">
-        <header>
-            <div class="profile-header">
-                <div class="avatar-placeholder">
-                    <i class="fa-solid fa-user-astronaut"></i>
+    <div class="site-wrapper">
+        <nav class="top-nav">
+            <div class="logo">PORTFOLIO.</div>
+            <div class="nav-links">
+                <a href="#about">ABOUT</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#qualifications">QUALIFICATIONS</a>
+            </div>
+            <div class="nav-right">
+                <span class="lang-switch">JP / EN</span>
+                <a href="#contact" class="nav-contact">CONTACT</a>
+            </div>
+        </nav>
+
+        <main class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    IT STUDENT.<br>
+                    IN THE MAKING.
+                </h1>
+                <p class="hero-subtitle">新しい技術に触れ、未来を構築する。</p>
+                
+                <div class="hero-description">
+                    ITの基礎から最新技術まで幅広く学ぶ大学生です。<br>
+                    日々の学習を形にし、実装・理解を通じてエンジニアとしての成長を実現します。
                 </div>
-                <h1>Hello, I'm <span class="gradient-text">Kosuke</span></h1>
-                <p class="subtitle">IT Student & Aspiring Developer</p>
-                <div class="social-links">
-                    <a href="https://www.wantedly.com/id/kousuke_kubota_h" class="social-btn wantedly" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fa-solid fa-id-badge"></i> Wantedly
+
+                <div class="hero-actions">
+                    <a href="https://www.wantedly.com/id/kousuke_kubota_h" target="_blank" class="btn-primary">
+                        WANTEDLY PROFILE <span class="arrow">⟶</span>
                     </a>
-                    <a href="https://github.com/kosuke0530" class="social-btn github" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i> GitHub
+                    <a href="https://github.com/kosuke0530" target="_blank" class="btn-secondary">
+                        <i class="fa-brands fa-github" style="margin-right: 8px;"></i> GITHUB <span class="arrow">⟶</span>
                     </a>
                 </div>
             </div>
-        </header>
 
-        <main class="bento-grid">
-            <section id="about" class="bento-card bento-large">
-                <div class="card-icon"><i class="fa-solid fa-id-card"></i></div>
-                <h2>自己紹介</h2>
-                <div class="card-content">
-                    <p>こんにちは！IT初心者の大学生です。</p>
-                    <p>勉強も兼ねて自分のプロフィールをまとめたwebsiteを作成しています。新しい技術に触れるのが好きで、日々様々なことを吸収中です。</p>
-                </div>
-            </section>
-
-            <section id="skills" class="bento-card">
-                <div class="card-icon"><i class="fa-solid fa-code"></i></div>
-                <h2>スキル</h2>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <i class="fa-brands fa-html5 skill-icon" style="color: #E34F26;"></i>
-                        <span class="skill-name">HTML / CSS</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-js skill-icon" style="color: #F7DF1E;"></i>
-                        <span class="skill-name">JavaScript <span class="badge">勉強中</span></span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-python skill-icon" style="color: #3776AB;"></i>
-                        <span class="skill-name">Python <span class="badge">勉強中</span></span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-java skill-icon" style="color: #007396;"></i>
-                        <span class="skill-name">Java <span class="badge">基礎</span></span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-git-alt skill-icon" style="color: #F05032;"></i>
-                        <span class="skill-name">Git <span class="badge">基礎</span></span>
+            <div class="features-grid">
+                <div class="feature-col" id="about">
+                    <div class="feature-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                    <div class="feature-text">
+                        <h3>ABOUT ME</h3>
+                        <h4>自己紹介</h4>
+                        <p>IT初心者の大学生。自分のプロフィールをまとめたwebsiteを作成し、日々様々な技術を吸収中。</p>
                     </div>
                 </div>
-            </section>
 
-            <section id="qualifications" class="bento-card">
-                <div class="card-icon"><i class="fa-solid fa-award"></i></div>
-                <h2>資格</h2>
-                <ul class="custom-list">
-                    <li>
-                        <div class="list-marker"><i class="fa-solid fa-check"></i></div>
-                        <span>ITパスポート</span>
-                    </li>
-                    <li>
-                        <div class="list-marker"><i class="fa-solid fa-check"></i></div>
-                        <span>基本情報技術者</span>
-                    </li>
-                    <li>
-                        <div class="list-marker"><i class="fa-solid fa-check"></i></div>
-                        <span>応用情報技術者</span>
-                    </li>
-                    <li>
-                        <div class="list-marker"><i class="fa-solid fa-check"></i></div>
-                        <span>Python3エンジニア認定基礎試験</span>
-                    </li>
-                </ul>
-            </section>
+                <div class="feature-col" id="skills">
+                    <div class="feature-icon"><i class="fa-solid fa-bars-staggered"></i></div>
+                    <div class="feature-text">
+                        <h3>SKILLS</h3>
+                        <h4>スキル</h4>
+                        <p>HTML/CSS, JavaScript, Python, Java(基礎), Git</p>
+                    </div>
+                </div>
+
+                <div class="feature-col" id="qualifications">
+                    <div class="feature-icon"><i class="fa-regular fa-circle"></i></div>
+                    <div class="feature-text">
+                        <h3>CERTIFICATIONS</h3>
+                        <h4>資格</h4>
+                        <p>ITパスポート, 基本情報技術者, 応用情報技術者, Python3エンジニア認定基礎</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>SCROLL</span>
+                <div class="line"></div>
+            </div>
+
+            <div class="bottom-right-box">
+                <div class="br-text">
+                    STUDENT ORIGIN.<br>
+                    TECH DRIVEN.<br>
+                    FUTURE IMPACT.
+                </div>
+                <a href="https://github.com/kosuke0530" target="_blank" class="br-link">
+                    VIEW GITHUB <span class="arrow">⟶</span>
+                </a>
+            </div>
         </main>
-
-        <footer>
-            <p>&copy; 2026 My Portfolio. Designed with passion.</p>
-        </footer>
     </div>
-
-    <script>
-        // マウスの動きに合わせてカードの光（グラデーション）を動かすスクリプト
-        document.addEventListener('DOMContentLoaded', () => {
-            const cards = document.querySelectorAll('.bento-card');
-
-            cards.forEach(card => {
-                card.addEventListener('mousemove', e => {
-                    const rect = card.getBoundingClientRect();
-                    const x = e.clientX - rect.left;
-                    const y = e.clientY - rect.top;
-
-                    card.style.setProperty('--mouse-x', `${x}px`);
-                    card.style.setProperty('--mouse-y', `${y}px`);
-                });
-            });
-        });
-    </script>
 </body>
-
 </html>
