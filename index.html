@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,14 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="background-effects">
         <div class="glow-orb orb-1"></div>
@@ -26,6 +30,16 @@
                 </div>
                 <h1>Hello, I'm <span class="gradient-text">Kosuke</span></h1>
                 <p class="subtitle">IT Student & Aspiring Developer</p>
+                <div class="social-links">
+                    <a href="https://www.wantedly.com/id/kousuke_kubota_h" class="social-btn wantedly" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-solid fa-id-badge"></i> Wantedly
+                    </a>
+                    <a href="https://github.com/kosuke0530" class="social-btn github" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </div>
             </div>
         </header>
 
@@ -99,13 +113,13 @@
         // マウスの動きに合わせてカードの光（グラデーション）を動かすスクリプト
         document.addEventListener('DOMContentLoaded', () => {
             const cards = document.querySelectorAll('.bento-card');
-            
+
             cards.forEach(card => {
                 card.addEventListener('mousemove', e => {
                     const rect = card.getBoundingClientRect();
                     const x = e.clientX - rect.left;
                     const y = e.clientY - rect.top;
-                    
+
                     card.style.setProperty('--mouse-x', `${x}px`);
                     card.style.setProperty('--mouse-y', `${y}px`);
                 });
@@ -113,4 +127,5 @@
         });
     </script>
 </body>
+
 </html>
